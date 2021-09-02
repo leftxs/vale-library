@@ -1,0 +1,13 @@
+# Check if list start with a capital letter
+
+```yaml
+---
+extends: existence
+message: "Capitalize the first word in a list."
+link: https://contribute.jquery.org/style-guide/prose/#article-amp-sentence-structure
+level: warning
+scope: list
+nonword: true
+tokens:
+  - '^[a-z].+'
+---
