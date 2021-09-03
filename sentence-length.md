@@ -1,0 +1,10 @@
+# Here
+
+```
+extends: occurrence
+message: "Try to keep sentences short (< 30 words)."
+scope: sentence
+level: suggestion
+max: 30
+token: \b(\w+)\b
+```
