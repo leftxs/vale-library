@@ -1,0 +1,11 @@
+# Source: Wouter - RtD Slack
+
+```yaml
+# Checks for sentences where e.g. "perform validation" can be simplified to "validate".
+extends: existence
+ignorecase: true
+message: "Simplify '%s' by removing the first word and making the last word a verb."
+level: suggestion
+tokens:
+  - (?:(perform|performs|do|does|run|runs)( \w+){0,2} \w+(tions?|ing))
+```
